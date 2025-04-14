@@ -2,5 +2,5 @@
 
 ## How To Comment in JS
 
-// in-line comments 
+// in-line comments <br>
 /* multi-line comments */
