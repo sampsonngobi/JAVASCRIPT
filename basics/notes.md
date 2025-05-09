@@ -65,11 +65,96 @@ number--<br>
 
 
 
-modulus  %<br>
+modulus (shows the remainder after a division operation. It helps to check if a number is even or odd) %<br>
 exponentiation  **<br>
 assignment  =<br>
 equality  ===<br>
 inequality  !==<br>
+
+### Adding numbers to the value of a variable using += operation
+
+var a = 3;<br>
+
+a = a + 10 - this is equals to 13<br>
+a += 10 - this is equals to 13<br>
+
+### subtracting numbers from the value of a variable using += operation
+
+var a = 3;<br>
+
+a = a - 1 - this is equals to 2<br>
+a -= 10 - this is equals to 2<br>
+
+This works with multiplication and divition<br>
+
+Strings are surrounded with quotes<br>
+var name = "John"<br>
+
+If I have a quote inside my string, a backward slash is used to tell JS that it is no the begining or end of a string<br>
+
+for example<br>
+var myFavoriteQuote = "\"In the country of the blind a one eyed man is the king\" is my favourite quote"<br>
+
+You can also start and end your string with single quotesvar myFavoriteQuote = "\"In the country of the blind a one eyed man is the king\" is my favourite quote"<br>
+
+var myFavoriteQuote = '\"In the country of the blind a one eyed man is the king\" is my favourite quote'<br>
+
+\' - single quote<br>
+\" - double quote<br>
+\\ - backslash<br>
+\n - newline<br>
+\r - carriage return<br>
+\t - tab<br>
+\b - backspace<br>
+\f - form feed<br>
+
+## Concatinating strings 
+
+var name = "Sampson" <br>
+var greeting = "Hello"<br>
+
+var fullGreeting = greeting + " " + name<br>
+console.log(fullGreeting)<br>
+// Outputs: Hello Sampson<br>
+
+It's posible to use += in concatinate 
+
+var greeting = Hello, ;<br>
+
+greeting += Sampson!<br>
+console.log(greeting)<br>
+// Outputs: Hello, Sampson!<br>
+
+## Template literals
+Template literals are a new way to create strings in JavaScript. They were introduced in ECMAScript
+2015 (ES6). They are a more readable and efficient way to create strings, especially when
+you need to insert variables or expressions into a string.<br>
+
+var name = "Sampson"<br>
+var age = 30<br>
+var greeting = `Hello, my name is ${name} and I am ${age} years old`<br>
+console.log(greeting)<br>
+// Outputs: Hello, my name is Sampson and I am 30 years old<br>
+
+#### Finding the lenght of a string
+
+We can find the lenght of a string by using the .lenght property.<br> 
+var myString = "Hello, Sampson"<br>
+console.log(myString.length)<br>
+// Outputs: 13<br>
+
+#### Bracket notation
+Bracket notation is a way to access a character in a string by its index. The index is the
+position of the character in the string, starting from 0. For example, the first character in
+the string "Hello" is at index 0, the second character is at index 1,
+and so on.<br>
+var myString = "Hello, Sampson"<br>
+console.log(myString[0])<br>
+// Outputs: H<br>
+console.log(myString[1])<br>
+// Outputs: e<br>
+console.log(myString[2])<br>
+// Outputs: l<br>
 
 
 
