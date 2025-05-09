@@ -156,5 +156,42 @@ console.log(myString[1])<br>
 console.log(myString[2])<br>
 // Outputs: l<br>
 
+We can find the last character of a string without knowing it's lenght. <br>
+var myString = "Sampson"<br>
+console.log(myString[myString.lenght-1])<br>
+//output: n<br>
+
+## ARAYS
+Arrays help us to store several pieces of data in one place. It starts and ends with a [].<br>
+The elements are seperated by a comma , and can be of different data types.<br>
+Example: myArray = ["Sam", 20, Nigerian]<br>
+
+### Nested Arrays 
+An array can contain another array<br>
+myNestedArray = [[sapson, 20], [john, 40], [james, 25]]<br>
+
+### Accessing array data with indexes
+We can access the data in an array using the []. We start to count from 0<br>
+For example: myArray = [sampson, john, james]<br>
+myData = myArray[0]
+//output: sampson
+
+
+### Modifying the data of an array
+
+myArray = [sampson, john, james]<br>
+myArray[1] = Peace<br>
+console.log(myArray)<br>
+//output: [sampson, Peace, james]<br>
+
+We can select the data of a multi layered array<br>
+Example:<br>
+myArray = [[sampson, 40], [John, 50], [james, 45]]<br>
+To acces the number 50, we point to the 1 index in the first layer and the 1 index in the second layer<br>
+
+var myData = myArray[1][1]<br>
+console.log(myData)
+//output: 50
+
 
 
