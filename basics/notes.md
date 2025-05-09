@@ -193,5 +193,41 @@ var myData = myArray[1][1]<br>
 console.log(myData)
 //output: 50
 
+### ARRAY MANIPULATION
+
+#### Push function 
+We can add elements to the end of an array using the .push()<br>
+For example<br>
+myArray = [sampson, john, james]<br>
+myArray.push(peace)<br>
+console.log(myArray)<br>
+//output: [sampson, john, james, peace]<br>
+
+#### unshift function 
+We can add elements to the beginning of an array using the .unshift()<br>
+For example<br>
+myArray = [sampson, john, james]<br>
+myArray.unshift(peace)<br>
+console.log(myArray)<br>
+//output: [peace, sampson, john, james]<br>
+
+
+#### Pop function 
+ The .pop() function removes the last element in an array<br>
+For example<br>
+myArray = [sampson, john, james]<br>
+myArray.pop()<br>
+console.log(myArray)<br>
+//output: [sampson, john]<br> 
+
+#### Shift function 
+ The .shift() function removes the first element in an array<br>
+For example<br>
+myArray = [sampson, john, james]<br>
+myArray.shift()<br>
+console.log(myArray)<br>
+//output: [john, james]<br> 
+
+
 
 
