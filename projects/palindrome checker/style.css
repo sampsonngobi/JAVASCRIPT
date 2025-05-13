@@ -1,0 +1,30 @@
+h2{
+    margin: 3rem 1rem;
+}
+
+input{
+    width: 40%;
+    height: 40px;
+    margin-left: 1rem;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+button{
+    width: 70px;
+    height: 45px;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    font-size: medium;
+}
+
+.result{
+    margin-left: 1rem;
+}
+
+body{
+    background: rgb(215, 153, 153);
+}

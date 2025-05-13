@@ -228,6 +228,35 @@ myArray.shift()<br>
 console.log(myArray)<br>
 //output: [john, james]<br> 
 
+### split
+This takes a string converts it into an array based on specified delimeter in the string.<br>
 
+For example<br>
 
+Const str = "Hello world";<br>
+const arr = str.split(" ") // using the space as delimeter<br>
+console.log(arr)<br>
+//output: ["Hello", "world"]<br>
 
+### reverse
+this reverses and array
+For example<br>
+
+const arr = ["d", "o", "g"]<br>
+const reversedArr  = arr.reverse()<br>
+console.log(reversedArr)<br>
+//outout: ["g", "o", "d"]<br>
+
+### join
+
+The join() method of Array instances creates and returns a <br>
+new string by concatenating all of the elements in this array, <br>
+separated by commas or a specified separator string. If the array has <br>
+only one item, then that item will be returned without using the separator.<br>
+
+const arr = ["g", "o", "d"]
+function joinArr(){
+    return arr.join("")
+console.log(joinArr())
+//output: god
+}
