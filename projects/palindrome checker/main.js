@@ -22,6 +22,8 @@ function check() {
     } else {
         result.innerHTML = "❌ Your word is NOT a PALINDROME.";
     }
+
+    input.value =""
 }
 
 button.addEventListener("click", () => {
