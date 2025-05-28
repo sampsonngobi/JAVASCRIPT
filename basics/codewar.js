@@ -85,4 +85,15 @@ function countPositivesSumNegatives(input) {
 
 }
 
-console.log(countPositivesSumNegatives([1, 6, 54, 3, 7, 5, 3, 5, 3, -3, -5]))
+//console.log(countPositivesSumNegatives([1, 6, 54, 3, 7, 5, 3, 5, 3, -3, -5]))
+//.........................................................................................
+
+//Given a non-empty array of integers, return the result of multiplying the values together in order. Example:
+function grow(x){
+    let product = 1
+    for(i =0; i < x.length; i++){
+        product *= x[i];
+    }
+      return product;
+}
+ grow([1,2,3,4,5,6]);
