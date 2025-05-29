@@ -66,7 +66,7 @@ function opposite(num) {
 
 function countPositivesSumNegatives(input) {
     if (!input || input.length === 0) return [];
-  
+
     let countPositive = 0;
     let sumNegative = 0;
 
@@ -74,14 +74,14 @@ function countPositivesSumNegatives(input) {
 
         if (input[i] > 0) {
             countPositive++;
-          
+
         } else if (input[i] < 0) {
             sumNegative += input[i];
         }
 
     }
 
-    return  [countPositive, sumNegative]
+    return [countPositive, sumNegative]
 
 }
 
@@ -89,11 +89,79 @@ function countPositivesSumNegatives(input) {
 //.........................................................................................
 
 //Given a non-empty array of integers, return the result of multiplying the values together in order. Example:
-function grow(x){
+function grow(x) {
     let product = 1
-    for(i =0; i < x.length; i++){
+    for (i = 0; i < x.length; i++) {
         product *= x[i];
     }
-      return product;
+    return product;
 }
- grow([1,2,3,4,5,6]);
+//grow([1,2,3,4,5,6]);
+
+//..............................................................................................
+
+/* 
+ Return the number (count) of vowels in the given string.
+ We will consider a, e, i, o, u as vowels for this Kata (but not y).
+The input string will only consist of lower case letters and/or spaces.
+*/
+
+function getCount(str) {
+    let count = 0
+    for (i = 0; i < str.length; i++) {
+        if (str[i] === "a" || str[i] === "e" || str[i] === "i" || str[i] === "o" || str[i] === "u") {
+            count++
+        }
+    }
+
+    return count
+}
+
+//console.log(getCount("sampsonuie"))
+
+
+
+function getCount(str) {
+    let count = 0
+    for (i = 0; i < str.length; i++) {
+        switch (str[i]) {
+            case "a":
+                count++
+                break
+            case "e":
+                count++
+                break
+            case "i":
+                count++
+                break
+            case "o":
+                count++
+                break
+            case "u":
+                count++
+                break
+        }
+    }
+
+    return count
+}
+
+//console.log(getCount("sampsonuie"))
+
+/*
+Write a program that finds the summation of every number 
+from 1 to num (both inclusive). The number will always be a positive integer greater 
+than 0. Your function only needs to return the result, what is shown between parentheses 
+in the example below is how you reach that result and it's not part of it, see the sample tests.
+*/
+
+var summation = function (num) {
+    let count = 0
+    for (i = 1; i <= num; i++) {
+        count += i
+    }
+
+    return count
+}
+
+console.log(summation(7))
