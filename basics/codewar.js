@@ -164,4 +164,69 @@ var summation = function (num) {
     return count
 }
 
-console.log(summation(7))
+//console.log(summation(7))
+//.................................................................................................
+
+//Write a function which calculates the average of the numbers in a given array.
+
+function findAverage(array) {
+  if(array.length === 0){
+     return 0;
+  }
+
+  let sum = 0
+  array.forEach(element => {
+    sum+=element
+  });
+
+  return sum / array.length
+ 
+}
+
+//console.log(findAverage([3,7,5]))
+// ..........................................................
+
+//Given an array of integers, return a new array with each value doubled.
+
+function maps(x){
+    const newArray = []
+    x.forEach(element => {
+        const result = element * 2
+          
+          newArray.push(result)
+         
+    });
+
+    console.log(newArray)
+    return newArray
+}
+
+//maps([1,2,3])
+
+//.............................................................................
+
+/*Given a list of integers, determine whether the sum of its elements is odd or even.
+
+Give your answer as a string matching "odd" or "even".
+
+If the input array is empty consider it as: [0] (array with a zero).
+*/
+
+function oddOrEven(array){
+    if(array.length === 0){
+        array = [0]
+    }
+    let sum = 0
+    array.forEach(element => {
+        sum+= element
+    });
+
+    if(sum % 2 === 0){
+        return true
+    }
+
+    return false 
+
+}
+
+console.log(oddOrEven([]))
