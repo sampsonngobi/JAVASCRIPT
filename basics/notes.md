@@ -260,3 +260,14 @@ function joinArr(){
 console.log(joinArr())
 //output: god
 }
+
+### Splice 
+
+The splice method deletes a specific index in an array. It takes two values, the index and the number of items to delete starting at the specified index.  <br>
+
+const arr = ["g", "t", "y"]<br>
+
+function deleteItem(){<br>
+    arr.splice(arr[i], 1);    <br>  
+}
+    
