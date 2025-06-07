@@ -46,6 +46,10 @@ function renderItems() {
 
         const button = document.createElement("button")
         button.textContent = "Delete"
+        button.style.width = "70px"
+        button.style.fontSize = "20px"
+        button.style.borderRadius = "5px"
+        button.style.marginLeft = "70px"
         button.onclick = () => removeItem(items[i])
 
         container.appendChild(text)
