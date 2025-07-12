@@ -236,7 +236,7 @@ function oddOrEven(array){
 
  For example, for [1, 2, 2] it should return 9 because */
 
- function squareSum(numbers){
+/* function squareSum(numbers){
 
   let count = 0;  
   for(let i = 0; i < numbers.length; i++){
@@ -247,4 +247,71 @@ function oddOrEven(array){
     return count
 }
 
-console.log(squareSum([1,2,2]));
+console.log(squareSum([1,2,2]));*/
+
+/*
+Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
+
+For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1. (81-1-1-81)
+
+Example #2: An input of 765 will/should return 493625 because 72 is 49, 62 is 36, and 52 is 25. (49-36-25)
+
+Note: The function accepts an integer and returns an integer.
+
+Happy Coding!*/ 
+
+function squareDigits(num){
+  const numArray = num.toString().split('')
+   
+    let result =""
+    console.log(numArray.length)
+    for(i = 0; i < numArray.length; i++){
+       const root =  Math.pow(numArray[i], 2)
+        
+       result += root
+      
+    }
+    
+    return Number(result)
+    
+}
+
+//console.log(squareDigits(186))
+
+// Consider an array/list of sheep where some sheep may be missing from their place. We need 
+// a function that counts the number of sheep present in the array (true means present).
+
+function countSheeps(sheep) {
+  // TODO
+  
+let count = 0
+sheep.forEach((element) => {
+  if (element == true){
+   count ++
+  }
+});
+  return count 
+}
+
+
+// This time no story, no theory. The examples below show you how to write function accum:
+
+// Examples:
+// accum("abcd") -> "A-Bb-Ccc-Dddd"
+// accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+// accum("cwAt") -> "C-Ww-Aaa-Tttt"
+// The parameter of accum is a string which includes only letters from a..z and A..Z.
+
+
+function accum(s) {
+	// your code
+  let newString = s.split('')
+  
+  newString[0] = newString[0].toUpperCase()
+  
+  
+  for(i = 1; i < newString.length; i++){
+  const position = i + 1
+    newString[i]
+  }
+}
